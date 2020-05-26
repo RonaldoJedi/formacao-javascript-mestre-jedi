@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template com HTML5 e Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm">
+
+                <h3>Form com HTML 5</h3>
+                <h2>Cadastro do Cliente</h2>
+
+                <form method="POST" action="/" id="formHtml">
+                    <div>
+                        <label for="nomeHtml">Nome</label>
+                        <input type="text" id="nomeHtml" name="nomeHtml">
+                    </div>
+                    <div>
+                        <label for="emailHtml">Email</label>
+                        <input type="email" id="emailHtml" name="emailHtml">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="emailPromocionalHtml" name="emailPromocionalHtml">
+                        <label for="emailPromocionalHtml">Receber email profissional?</label>
+                    </div>
+                    <div>
+                        <label for="FormaContatoTelefoneRadioHtml">Contato por telefone</label>
+                        <input type="radio" id="FormaContatoTelefoneRadioHtml" name="FormaContatoRadioHtml">
+                        <label for="FormaContatoEmailRadioHtml">Contato por Email</label>
+                        <input type="radio" id="FormaContatoEmailRadioHtml" name="FormaContatoRadioHtml">
+                    </div>
+                    <div>
+                        <select name="estadoSelectHml" id="estadoSelectHtml">
+                            <option selected>Selecione um estado</option>
+                            <option value="RS">RS</option>
+                            <option value="RJ">RJ</option>
+                            <option value="SP">SP</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="col-sm">
+
+                <h3>Form com Bootstrap</h3>
+                <h2>Cadastro do Cliente</h2>
+                <form method="POST" action="/" id="formBoot">
+
+                    <div class="form-group">
+                        <label for="nomeBoot">Nome</label>
+                        <input type="text" class="form-control" id="nomeBoot" name="nomeBoot"
+                            placeholder="Informe seu nome.">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="emailBoot">Email</label>
+                        <input type="email" class="form-control" id="emailBoot" name="emailBoot"
+                            placeholder="Informe seu email .">
+                    </div>
+
+                 
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="emailPromocionalBoots"
+                                name="emailPromocionalBoots">
+                            <label class="custom-control-label" for="emailPromocionalBoots">Receber email
+                                promocional?</label>
+                        </div>
+                        <br>
+
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="FormaContatoTelefoneRadioBoot" name="formaContatoRadioBoot"
+                                class="custom-control-input">
+                            <label class="custom-control-label" for="FormaContatoTelefoneRadioBoot">Contato por
+                                telefone</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="FormaContatoEmailRadioBoot" name="formaContatoRadioBoot"
+                                class="custom-control-input">
+                            <label class="custom-control-label" for="FormaContatoEmailRadioBoot">Contato por
+                                email</label>
+                        </div>
+                        <br>
+                        <div>
+                        <select class="custom-select" name="estadoSelectBoot" id="estadoSelectBoot">
+                            <option selected>Selecione um estado</option>
+                            <option value="RS">RS</option>
+                            <option value="RJ">RJ</option>
+                            <option value="SP">SP</option>
+                        </select>
+                        </div>
+                    
+                    <br>
+                    <div>
+                        <button type="button" onclick="recebeDadosFormBoot()" class="btn btn-primary">Primary</button>
+                    </div>
+                    <br>
+                </form>
+            </div>
+        </div>
+        <!--row-->
+      </div>
+      <!--container-->
+        <footer>
+            <div class="card">
+                <div class="card-header">
+                    Featured
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+    </div>
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
